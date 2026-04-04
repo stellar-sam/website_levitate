@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+    
+    
+  }
+
+
+
+  /* Add top padding to avoid navbar overlap */
+  .section1 {
+    height: 55vh;
+    padding-top: 100px; /* Adjust this value to match the height of the navbar */
+  }
+
+  .section2 {
+    height: 30vh;
+  }
+
+  .section3{
+    height: 30vh;
+  }
+  
+  .section4 {
+    height: 70vh;
+  }
+
+  #container3D{
+    position: relative;
+    inset: 0;
+    /*background-color: #a32222;*/
+    z-index: 100;
+    pointer-events: none;
+}
+  
+  
+  
+  
+  .text-left {
+    font-size: 1.4em; /* Increase the font size */
+    line-height: 1.6; /* Increase line spacing */
+    max-width: 60%;
+    text-align: justify;
+    margin-left: 20%;
+    padding: 20px;
+  
+    
+  }
+  
+  .text-right {
+    font-size: 1.4em; /* Increase the font size */
+    line-height: 1.6; /* Increase line spacing */
+    max-width: 60%;
+    text-align: justify; 
+    margin-left: 20%;
+    padding: 20px;
+    
+  }
+  
+  /* Center Heading Relative to Text */
+  .text-left h1 {
+    text-align: center;
+  }
+  
+  .text-right h1 {
+    text-align: center;
+  }
+  
+  
+
+
+
+/* Pop-in keyframes */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
+
+
+/* General Mobile Styles */
+@media (max-width: 768px) { /* Target phones and small tablets */
+  body {
+    padding-top: 6vw;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  .text-left, .text-right {
+    font-size: 1em;
+    max-width: 100%; /* Allow more space on smaller screens */
+    margin: 2.5em;
+    text-align: justify; /* Center align text for better readability */
+    margin-left : 15%;
+  }
+
+  .text-left h1, .text-right h1 {
+    font-size: 1.5em; /* Smaller heading size */
+  }
+
+  .section1 {
+    padding-top: 60px; /* Reduce top padding for smaller screens */
+    height: auto; /* Allow the height to adjust dynamically */
+  
+  }
+
+
+
+  .segment {
+    height: auto; /* Dynamically adjust the height of all segments */
+    padding: 10px 0; /* Add vertical spacing between segments */
+  }
+
+  .section2, .section3, .mid1, .mid2, .mid3, .mid4 {
+    display: none;
+
+  }
+
+  #midSection {
+    display: flex; /* Display the mid-section */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-image: url("assets/ttbg.png"); /* Add the background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    height: 20vh; /* Full viewport height for the section */
+  }
+
+  
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .text-left{
+    padding-left: 0em;
+  }
+
+  .text-left, .text-right {
+    font-size: 1.1em;
+    max-width: 60%; /* Slightly larger text block for tablets */
+  }
+
+  .section1 {
+    height : 35vh;
+  }
+
+  .section4 {
+    height: auto;
+  }
+  
+  .section2, .section3, .mid1, .mid2, .mid3, .mid4 {
+    display: none;
+
+  }
+
+  #midSection {
+    display: flex; /* Display the mid-section */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-image: url("assets/ttbg.png"); /* Add the background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    height: 30vh; /* Full viewport height for the section */
+  }
+
+  .text-left h1, .text-right h1 {
+    font-size: 2em;
+  }
+
+  .text-right {
+    padding-bottom: -5vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container3D {
+    display: none; /* Hide the 3D model container */
+  }
+}
+
+/* Landscape mode styles */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .section1 {
+    padding-top: 10px; /* Adjust padding for landscape */
+    height: 160vh; /* Allow dynamic height */
+  }
+
+  .text-left, .text-right {
+    font-size: 1.2em;
+    max-width: 55%; /* Adjust width for better spacing */
+    margin: 15%;
+  }
+
+  .text-left h1, .text-right h1 {
+    font-size: 1.8em;
+  }
+
+  .text-left {
+    margin-left : 25%;
+  }
+
+
+  .text-right {
+    margin-left : 20%;
+  }
+
+  #midSection {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("assets/ttbg.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* More height for landscape mode */
+  }
+
+  .section2, .section3, .mid1, .mid2, .mid3, .mid4 {
+    display: none; /* Make previously hidden sections visible */
+  }
+
+  #container3D {
+    display: none; /* Enable 3D container in landscape */
+  }
+}
+

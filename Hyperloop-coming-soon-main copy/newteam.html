@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="newteam.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="navfoot.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Levitate Hyperloop Logo" draggable="false">
+        </a>
+  
+        <!-- Hamburger Menu for mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+  
+        <ul class="nav-links">
+          <div class="nav-links-left">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="newteam.html">Team</a></li>
+            <li><a href="pod2.html">Technology</a></li>
+          </div>
+          <div class="nav-links-right">
+        <li><a href="achievements.html">Achievements</a></li>
+             <li><a href="sponsors.html">Partners</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </div>
+        </ul>
+      </nav>
+
+
+<div class="container">
+
+    <div class="year-selector">
+        <label for="team-year">Select Team Year: </label>
+        <select id="team-year" onchange="filterTeam()">
+            <option value="2025-26">2025-26</option>
+            <option value="2024-25">2024-25</option>
+        </select>
+    </div>
+
+    <div id="team-2025-26">
+    
+        <!-- Board Section -->
+<section class="section">
+    <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="500">Team Leadership</h2>
+    <div class="board">
+        
+        <div class="card" data-aos="fade-up">
+            <img src="assets/adarsh.JPG" 
+                alt="Adarsh Lakshman" 
+                class="profile-pic" 
+                id="secret-adarsh" 
+                onclick="unlockAdarshEgg()"
+                draggable="false"
+                style="cursor: pointer;">
+            <h3>Adarsh Varadarajan Lakshman</h3>
+            <p>Team Captain</p>
+            <a href="https://www.linkedin.com/in/adarsh-varadarajan-lakshman" target="_blank" class="linkedin-btn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="leadership-row">
+            <div class="card" data-aos="fade-up">
+                <img src="assets/aahir1.JPG" alt="Suryansh Anthal" class="profile-pic">
+                <h3>Aahir Basu</h3>
+                <p>Team Vice Captain</p>
+                <a href="https://www.linkedin.com/in/aahir-basu-734693274/" target="_blank" class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="leadership-row">
+            <div class="card" data-aos="fade-right">
+                <img src="assets/divyanshu1.JPG" alt="Sanjith B S" class="profile-pic">
+                <h3>Divyanshu Shanker</h3>
+                <p>Head of Structures</p>
+                <a href="https://www.linkedin.com/in/divyanshu-shanker-b320812b2/" target="_blank" class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <img src="assets/ashish1.JPG" alt="Ashish Kumar" class="profile-pic">
+                <h3>Ashish Kumar</h3>
+                <p>Head Of Infrastructure</p>
+                <a href="https://www.linkedin.com/in/ashish-kumar-73ab8728a/" target="_blank" class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/juhiu.JPG" alt="Juhi Umrao" class="profile-pic">
+                <h3>Juhi Umrao</h3>
+                <p>Head Of Communications and Design</p>
+                <a href="https://www.linkedIn.com/in/juhiumrao" target="_blank" class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Team Members Section -->
+<section class="section">
+    <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic"data-aos-duration="500">Team Members</h2>
+    <div class="team-members">
+        <div class="row">
+            <div class="card" data-aos="fade-right">
+                <img src="assets/kunal1.jpg" alt="Member 3" class="profile-pic">
+                <h3>Kunal Bhardwaj</h3>
+                <p>Infrastructure</p>
+                <a href="https://www.linkedin.com/in/kunal-bhardwaj-55125234b" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>   
+            <div class="card" data-aos="fade-right">
+                <img src="assets/vrundan.JPG" alt="Member 3" class="profile-pic">
+                <h3>Vrundan Patel</h3>
+                <p>Infrastructure</p>
+                <a href="https://www.linkedin.com/in/vrundan-patel-197796387" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/achamba.JPG" alt="Member 3" class="profile-pic">
+                <h3>Tourangbam Achamba</h3>
+                <p>Infrastructure</p>
+                <a href="https://www.linkedin.com/in/tourangbam-achamba-759ab428a" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/siddhant.jpg" alt="Member 3" class="profile-pic">
+                <h3>Sidhant Rai</h3>
+                <p>Structures</p>
+                <a href="https://www.linkedin.com/in/sidhant-rai-2419b0382" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/arsh.JPG" alt="Member 3" class="profile-pic">
+                <h3>Arsh Gupta</h3>
+                <p>Structures</p>
+                <a href="https://www.linkedin.com/in/arsh-gupta-0b1399306" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/aadi.jpg" alt="Member 3" class="profile-pic">
+                <h3>Aadi Gupta</h3>
+                <p>Embedded Systems</p>
+                <a href="https://www.linkedin.com/in/aadi-gupta-60a4673a6" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/pranav.JPG" alt="Member 3" class="profile-pic">
+                <h3>Pranav Dhole</h3>
+                <p>Embedded Systems</p>
+                <a href="https://www.linkedin.com/in/pranav-dhole-39b1b9310" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/sam.jpg" alt="Member 3" class="profile-pic">
+                <h3>Sam</h3>
+                <p>Embedded Systems</p>
+                <a href="https://www.linkedin.com/in/sambhav-jain-cos/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div> </div>
+
+
+<div id="team-2024-25" style="display: none;">
+        <section class="section">
+            <h2 data-aos="fade-down">Team Leadership (2024-25)</h2>
+            <div class="board">
+                <div class="card" data-aos="fade-right">
+                    <img src="assets/viraaj.JPG" alt="Viraaj Gupta" class="profile-pic">
+                    <h3>Viraaj Gupta</h3>
+                    <p>Team Captain</p>
+                    <a href="https://www.linkedin.com/in/viraaj-gupta" target="_blank" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <img src="assets/suryansh.JPG" alt="Suryansh Anthal" class="profile-pic">
+                    <h3>Suryansh Anthal</h3>
+                    <p>Team Vice Captain</p>
+                    <a href="http://linkedin.com/in/suryansh-anthal" target="_blank" class="linkedin-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <img src="assets/sanjith.JPG" alt="Sanjith B S" class="profile-pic">
+                    <h3>Sanjith B S</h3>
+                    <p>Team Manager</p>
+                    <a href="https://www.linkedin.com/in/sanjith-bs/" target="_blank"class="linkedin-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <img src="assets/dev.JPG" alt="Devdatta Shinde" class="profile-pic">
+                    <h3>Devdatta Shinde</h3>
+                    <p>Head of Technology and Strategy</p>
+                    <a href="https://www.linkedin.com/in/devdatta-shinde-a674a224a/" target="_blank"class="linkedin-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic"data-aos-duration="500">Executive Board</h2>
+            <div class="executives">
+                <div class="row">
+                    <div class="card" data-aos="fade-right">
+                        <img src="assets/adarshold.JPG" alt="Adarsh Lakshman" class="profile-pic">
+                        <h3>Adarsh Lakshman</h3>
+                        <p>Research and Development Lead</p>
+                        
+                        <a href="https://in.linkedin.com/in/adarsh-varadarajan-lakshman-14b418339" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-right">
+                        <img src="assets/hari.JPG" alt="Harikeshavan B" class="profile-pic">
+                        <h3>Harikeshavan B</h3>
+    
+                        <p>Competition Lead(GHC)</p>
+                        
+                        <a href="https://www.linkedin.com/in/harikeshavan-b-1a8900251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                     <div class="card" data-aos="fade-left">
+                        <img src="assets/lokesh.JPG" alt="Lokesh Rastogi" class="profile-pic">
+                        <h3>Lokesh Rastogi</h3>
+                        <p>Head of Management</p>
+                        
+                        <a href="https://www.linkedin.com/in/evataylor" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <img src="assets/juhi.JPG" alt="Juhi Umrao" class="profile-pic">
+                        <h3>Juhi Umrao </h3>
+                        
+                        <p>Head of Communications</p>
+                        
+                        <a href="https://in.linkedin.com/in/juhi-umrao-ba9560248" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section class="section">
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic"data-aos-duration="500">Principal Engineers</h2>
+            <div class="principal-engineers">
+                <div class="row">
+                    <div class="card" data-aos="fade-right">
+                        <img src="assets/rajat.JPG" alt="Rajat Kaundal" class="profile-pic">
+                        <h3>Rajat Kaundal </h3>
+                        
+                        <p>Structures and Dynamics</p>
+                        <a href="https://www.linkedin.com/in/rajat-kaundal-35b352278" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-right">
+                        <img src="assets/aahir.JPG" alt="Aahir Basu" class="profile-pic">
+                        <h3>Aahir Basu</h3>
+                        
+                        <p>Power and Energy Systems</p>
+                        <a href="https://www.linkedin.com/in/aahir-basu-734693274/" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <img src="assets/gokul.JPG" alt="Gokul Kumar R P" class="profile-pic">
+                        <h3>Gokul Kumar R P</h3>
+                        <p>Embedded and Communication</p>
+                        <a href="https://www.linkedin.com/in/gokul-kumar-rp/" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="card" data-aos="fade-left">
+                        <img src="assets/jessica.JPG" alt="Jessica Sarah Koshy" class="profile-pic">
+                        <h3>Jessica Sarah Koshy</h3>
+                        <p>Software and AI Systems</p>
+                        <a href="https://www.linkedin.com/in/jessica-sarah-koshy-39b68a269/" target="_blank"class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section class="section">
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic"data-aos-duration="500">Technical leads</h2>
+    <div class="technical-teams">
+        <div class="row">
+            <div class="card" data-aos="fade-right">
+                <img src="assets/anshuman.JPG" alt="Anshuman Lenka" class="profile-pic">
+                <h3>Anshuman Lenka</h3>
+                <p>Structures and Civil</p>
+                <a href="https://www.linkedin.com/in/michaelgreen" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <img src="assets/vatsal.JPG" alt="Vatsal Kirit Kalola" class="profile-pic">
+                <h3>Vatsal Kirit Kalola</h3>
+                <p>Dynamics</p>
+                <a href="https://www.linkedin.com/in/vatsal-kalola-87759526a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/karan.JPG" alt="Karan Parekh" class="profile-pic">
+                <h3>Karan Parekh</h3>
+                
+                <p>Levitation</p>
+                <a href="https://www.linkedin.com/in/itskaranparekh/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+            </section>
+
+        <section class="section">
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic"data-aos-duration="500">Communication Leads</h2>
+    <div class="communication-leads">
+        <div class="row">
+            <div class="card" data-aos="fade-right">
+                <img src="assets/adhitya.JPG" alt="Adhitya Charan" class="profile-pic">
+                <h3>Adhitya Charan</h3>
+                <p>Design Lead</p>
+                <a href="https://www.linkedin.com/in/adhitya-charan-24112a246/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/pratyush.JPG" alt="JPratyush Singh Soni" class="profile-pic">
+                <h3>Pratyush Singh Soni</h3>
+                <p>Media Lead</p>
+                <a href="https://www.linkedin.com/in/pratyush-singh-soni-8430ba275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+            </section>
+
+        <section class="section">
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-cubic"data-aos-duration="500">Team Members</h2>
+    <div class="team-members">
+        <div class="row">
+            <div class="card" data-aos="fade-right">
+                <img src="assets/chinmay.jpg" alt="Member 3" class="profile-pic">
+                <h3> Chinmay D</h3>
+                <p>Sponsorship</p>
+                <a href="https://www.linkedin.com/in/devabathini-chinmay-a3156424b/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>   
+            <div class="card" data-aos="fade-right">
+                <img src="assets/divyanshu.JPG" alt="Member 3" class="profile-pic">
+                <h3> Divyanshu Shanker</h3>
+                <p>Structures and Dynamics</p>
+                <a href="https://www.linkedin.com/in/divyanshu-shanker-b320812b2/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/kanishka.JPG" alt="Member 14" class="profile-pic">
+                <h3>Kaniska U S</h3>
+                
+                <p>Embedded and Controls</p>
+                <a href="https://www.linkedin.com/in/member13" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/rishi.JPG" alt="Member 9" class="profile-pic">
+                <h3>Rishiraj Karia</h3>
+                <p>Materials and Chemicals</p>
+                <a href="https://www.linkedin.com/in/rishiraj-karia-058214269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card" data-aos="fade-right">
+                <img src="assets/yadu.JPG" alt="Member 5" class="profile-pic">
+                <h3>Yadhunandan P</h3>
+                <p>Levitation</p>
+                <a href="http://linkedin.com/in/yadunandan-prithiviraj-45b577275" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <img src="assets/ashish.JPG" alt="Member 6" class="profile-pic">
+                <h3>Ashish Kumar</h3>
+                
+                <p>Civil</p>
+                <a href="https://www.linkedin.com/in/ashish-kumar-73ab8728a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card"data-aos="fade-left">
+                <img src="assets/piyush.JPG" alt="Member 7" class="profile-pic">
+                <h3>Piyush Raj</h3>
+                
+                <p>Civil</p>
+                <a href="https://www.linkedin.com/in/piyush-raj-8271842a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/shwetha.JPG" alt="Member 8" class="profile-pic">
+                <h3>Swetha Mohandas</h3>
+                <p>Civil</p>
+                <a href="https://www.linkedin.com/in/swetha-mohandas-226b2a342/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="card" data-aos="fade-right">
+                <img src="assets/kunal.JPG" alt="Member 10" class="profile-pic">
+                <h3>Kunal Mathur</h3>
+                <p>Software and AI Systems</p>
+                <a href="https://www.linkedin.com/in/kunal-mathur-612108267/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <img src="assets/palash.JPG" alt="Member 11" class="profile-pic">
+                <h3>Palash Ghosh</h3>
+                <p>Software and AI Systems</p>
+                <a href="https://www.linkedin.com/in/palash-ghosh-285700287/" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <img src="assets/ramana.JPG" alt="Member 13" class="profile-pic">
+                <h3>Ramana Prasaant B</h3>
+                <p>Software and AI Systems</p>
+                <a href="https://www.linkedin.com/in/member13" target="_blank"class="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div> 
+        </div>
+        
+              
+            
+        </div>
+    </div>
+            </section>
+    </div> 
+
+
+
+<section class="faculty-coordinator">
+    <h2 data-aos="fade-down">Faculty Coordinator</h2>
+    
+    <div class="faculty-row top-row">
+        <div class="faculty-card" data-aos="flip-right">
+            <div class="info">
+                <img src="assets/naiju.jpg" 
+                     alt="Dr. Naiju C D" 
+                     class="profile-pic" 
+                     id="secret-naiju" 
+                     onclick=unlockEasterEgg()>
+                <div class="details">
+                    <h3>Dr. Naiju C D</h3>
+                    ...
+                    <p>Director (Student's Welfare) at VIT Vellore</p>
+                    <p>Professor, School of Mechanical Engineering</p>
+                    <blockquote>"Education is the most powerful weapon..."</blockquote>
+                    <a href="https://www.linkedin.com/in/naijucd/" target="_blank" class="linkedin-btn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faculty-coordinator">
+    <h2 data-aos="fade-down">Faculty Advisors</h2>
+    
+
+    <div class="faculty-row bottom-row">
+        <div class="faculty-card small-card" data-aos="fade-up">
+            <div class="info">
+                <img src="assets/sudhakarsir.jpg" alt="Name" class="profile-pic">
+                <div class="details">
+                    <h3>Dr. Sudhakar N</h3>
+                    <p>SELECT</p>
+                    <blockquote>​"Levitation is the ability to rise above the weight of the world without losing your connection to the earth."</blockquote>
+                    <a href="https://www.linkedin.com/in/drsudhakarn-9248822a/" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="faculty-card small-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+                <img src="assets/sharmilamam.jpg" alt="Name" class="profile-pic">
+                <div class="details">
+                    <h3>Dr. Sharmila N</h3>
+                    <p>SENSE</p>
+                    <blockquote>“We don’t just study motion—we redefine it, from wheels to levitation.”</blockquote>
+                    <a href="https://www.linkedin.com/in/sharmila-nageswaran/" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="faculty-card small-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+                <img src="assets/aarthymam.jpg" alt="Name" class="profile-pic">
+                <div class="details">
+                    <h3>⁠Dr. Aarthy S.L</h3>
+                    <p>SCOPE</p>
+                    <blockquote>“Where ideas lift off the ground and accelerate into the future.”</blockquote>
+                    <a href="https://www.linkedin.com/in/dr-aarthy-s-l-9440a2155/" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="faculty-card small-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+                <img src="assets/senthilsir.jpg" alt="Name" class="profile-pic">
+                <div class="details">
+                    <h3>⁠Dr. Senthil Kumar M</h3>
+                    <p>SMEC</p>
+                    <blockquote>“Engineering tomorrow’s transit: faster, smarter, and beyond friction.”</blockquote>a
+                    <a href="https://www.linkedin.com/in/dr-senthil-kumar-m-0971a2a9/" class="linkedin-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="social-media">
+      <a href="mailto:levitate@vit.ac.in" target="_blank" aria-label="Gmail">
+        <img src="assets/mail.png" alt="Gmail" class="icon-Gmail">
+      </a>
+      <a href="https://www.linkedin.com/company/levitate-vit/" target="_blank" aria-label="LinkedIn">
+        <img src="assets/lnd.png" alt="LinkedIn" class="icon-linkedin">
+      </a>
+      <a href="https://x.com/levitate_vit?t=kzOYYuIGqD3GC5pIyH9Vyg&s=09" target="_blank" aria-label="Twitter">
+        <img src="assets/tw.png" alt="Twitter" class="icon-twitter">
+      </a>
+      <a href="https://www.instagram.com/levitate_vit" target="_blank" aria-label="Instagram">
+        <img src="assets/insta.png" alt="Instagram" class="icon-instagram">
+      </a>
+      <a href="https://www.facebook.com/teamlevitatevit" target="_blank" aria-label="Facebook">
+        <img src="assets/fb.png" alt="Facebook" class="icon-facebook">
+      </a>
+      <a href="https://www.youtube.com/@LevitateHyperloop" target="_blank" aria-label="YouTube">
+        <img src="assets/yt.png" alt="YouTube" class="icon-youtube">
+      </a>
+      
+    </div>
+    <hr>
+  
+    
+    
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+      AOS.init(); // Initialize AOS
+  </script>
+
+<script>
+    // 1. INITIALIZE GLOBAL VARIABLES
+    let clickCount = 0;
+    let adarshClickCount = 0; // New counter for Adarsh
+
+    // 2. NAIJU EASTER EGG
+    function unlockEasterEgg() {
+        clickCount++;
+        const img = document.getElementById('secret-naiju');
+        if (!img) return;
+
+        if (clickCount === 5) {
+            img.src = 'assets/newnaiju.jpg';
+            img.style.filter = 'drop-shadow(0 0 15px #67e0f3)';
+            console.log("Director Mode Activated.");
+        }
+    }
+
+    // 3. ADARSH EASTER EGG
+    function unlockAdarshEgg() {
+        adarshClickCount++;
+        const img = document.getElementById('secret-adarsh');
+        if (!img) return;
+
+        // Visual feedback on each click (optional but fun)
+        img.style.transform = 'scale(1.05)';
+        setTimeout(() => img.style.transform = 'scale(1)', 100);
+
+        if (adarshClickCount === 5) {
+            // Replace 'assets/newadarsh.jpg' with your actual filename
+            img.src = 'assets/adarshnew.jpg'; 
+            img.style.filter = 'drop-shadow(0 0 15px #ff00ff) brightness(1.2)'; // Magenta glow for Adarsh
+            console.log("Captain Mode Activated.");
+        }
+    }
+
+    // 3. THE YEAR FILTER FUNCTION
+    function filterTeam() {
+        const selectedYear = document.getElementById('team-year').value;
+        const team2526 = document.getElementById('team-2025-26');
+        const team2425 = document.getElementById('team-2024-25');
+
+        if (selectedYear === '2025-26') {
+            if(team2526) team2526.style.display = 'block';
+            if(team2425) team2425.style.display = 'none';
+        } else {
+            if(team2526) team2526.style.display = 'none';
+            if(team2425) team2425.style.display = 'block';
+        }
+        AOS.refresh();
+    }
+
+    // 4. VIDEO PANEL LOGIC (With Safety Checks to fix the Null error)
+    const videoPanel = document.querySelector('.video-panel');
+    const facultyVideo = document.querySelector('.faculty-video');
+
+    if (videoPanel && facultyVideo) {
+        videoPanel.addEventListener('mouseover', () => {
+            facultyVideo.muted = false;
+            facultyVideo.play();
+        });
+
+        videoPanel.addEventListener('mouseout', () => {
+            facultyVideo.muted = true;
+            facultyVideo.pause();
+            facultyVideo.currentTime = 0;
+        });
+    }
+
+    // 5. OTHER UTILITIES
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        if(navbar) navbar.classList.toggle('active');
+    }
+
+    // Clean up URLs
+    if (window.location.pathname.endsWith(".html")) {
+        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+    }
+
+    // Initialize AOS
+    AOS.init();
+</script>
+
+</body>
+</html>

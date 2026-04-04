@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/Contact", "destination": "/contact.html" },
+    { "source": "/About", "destination": "/about.html" },
+    { "source": "/Team", "destination": "/newteam.html" },
+    { "source": "/Technology", "destination": "/pod2.html" },
+    { "source": "/Home", "destination": "/index.html" },
+    { "source": "/Projects", "destination": "/projects.html" },
+    { "source": "/Partners", "destination": "/sponsors.html" }
+  ]
+}

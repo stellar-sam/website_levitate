@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Technology </title>
+    <link rel = "stylesheet" type = "text/css" href = "pod2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="navfoot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  </head>
+
+   <!-- Navigation -->
+   <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Levitate Hyperloop Logo" draggable="false">
+    </a>
+
+    <!-- Hamburger Menu for mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <ul class="nav-links">
+      <div class="nav-links-left">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="newteam.html">Team</a></li>
+        <a href="pod2.html">Technology</a></li> 
+      </div>
+      <div class="nav-links-right">
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="sponsors.html">Partners</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <body>
+    <section>
+      <div id="bg"></div>
+      <div id="moon"></div>
+      <div id="mountain"></div>
+      <div id="road"></div>
+      <h2 id="text" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Technology</h2>
+    </section>
+    
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      // let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener('scroll',function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 2 + 'px';
+        mountain.style.top = -value * 0.1 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+
+      })
+
+      document.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.querySelector('.navbar');
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+          // Scrolling down
+          navbar.classList.add('hidden');
+        } else {
+          // Scrolling up
+          navbar.classList.remove('hidden');
+        }
+        lastScrollY = window.scrollY;
+        });
+      });
+    </script>
+    
+    
+  
+  </body>
+  
+  <body>
+    <div class="tech-info-container">
+    <div class="tech-card" data-aos="fade-up">
+        <div class="tech-content">
+            <div class="tech-text">
+                <div class="tech-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Double Sided Linear Induction Motor</h3>
+                <p>A Double-Sided Linear Induction Motor (DLIM) is an advanced propulsion system that generates linear motion directly without requiring rotary-to-linear conversion. By placing conductive reaction plates between two stator assemblies, the motor produces a symmetric electromagnetic field. Improving thrust efficiency and reducing mechanical losses. This configuration ensures better force distribution, enhanced stability, and minimal wear. This makes it ideal for high-speed transportation systems such as Hyperloop and maglev applications.</p>
+            </div>
+            <div class="tech-image">
+                <img src="assets/ghc2026.jpg" alt="DLIM Diagram">
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-card reversed" data-aos="fade-up">
+        <div class="tech-content">
+            <div class="tech-text">
+                <div class="tech-icon"><i class="fas fa-wave-square"></i></div>
+                <h3>Three-Phase SPWM Inverter (VFD)</h3>
+                <p>The Three-Phase Sinusoidal Pulse Width Modulation (SPWM) Inverter, commonly implemented within a Variable Frequency Drive (VFD), is responsible for converting DC power into a controlled AC output. By modulating pulse widths to approximate a sinusoidal waveform, it enables precise control over motor speed and torque while minimizing harmonic distortion. This ensures efficient power delivery, smoother motor operation, and improved energy utilization in high-performance electric propulsion systems.</p>
+            </div>
+            <div class="tech-image">
+                <img src="assets/ghc2026.jpg" alt="SPWM Waveform">
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-card" data-aos="fade-up">
+        <div class="tech-content">
+            <div class="tech-text">
+                <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Controller Area Network (CAN)</h3>
+                <p>The Controller Area Network (CAN) is a robust, real-time communication protocol designed for reliable data exchange between multiple embedded systems. Operating without a central computer, CAN allows distributed nodes—such as sensors, controllers, and actuators—to communicate efficiently over a shared bus. Its high noise immunity, fault tolerance, and deterministic performance make it essential for coordinating complex subsystems in automotive, industrial, and advanced transportation platforms.</p>
+            </div>
+            <div class="tech-image">
+                <img src="assets/ghc2026.jpg" alt="CAN Bus Architecture">
+            </div>
+        </div>
+    </div>
+    <div class="tech-card reversed" data-aos="fade-up">
+        <div class="tech-content">
+            <div class="tech-text">
+                <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Control Panel</h3>
+                <a href="https://stellar-sam.github.io/levitate-hyperloop-control-panel/" target="_blank" aria-label="LinkedIn">
+                  <img src="assets/logo.png" alt="Control Panel" class="icon-linkedin">
+                </a>
+                <p>The Control Panel is the central hub for managing and monitoring the Hyperloop pod's systems. It provides a user-friendly interface for operators to control various functions, view real-time data, and respond to system alerts. The panel integrates seamlessly with the pod's communication network, ensuring efficient coordination and operation of all subsystems.</p>
+            </div>
+            <div class="tech-image">
+                <img src="assets/controlpanel.png" alt="Control Panel">
+            </div>
+        </div>
+    </div>
+</div>
+  </body>
+    
+    
+
+     <!-- Footer -->
+<footer>
+  <div class="social-media">
+    <a href="mailto:levitate@vit.ac.in" target="_blank" aria-label="Gmail">
+      <img src="assets/mail.png" alt="Gmail" class="icon-Gmail">
+    </a>
+    <a href="https://www.linkedin.com/company/levitate-vit/" target="_blank" aria-label="LinkedIn">
+      <img src="assets/lnd.png" alt="LinkedIn" class="icon-linkedin">
+    </a>
+    <a href="https://x.com/levitate_vit?t=kzOYYuIGqD3GC5pIyH9Vyg&s=09" target="_blank" aria-label="Twitter">
+      <img src="assets/tw.png" alt="Twitter" class="icon-twitter">
+    </a>
+    <a href="https://www.instagram.com/levitate_vit" target="_blank" aria-label="Instagram">
+      <img src="assets/insta.png" alt="Instagram" class="icon-instagram">
+    </a>
+    <a href="https://www.facebook.com/teamlevitatevit" target="_blank" aria-label="Facebook">
+      <img src="assets/fb.png" alt="Facebook" class="icon-facebook">
+    </a>
+    <a href="https://www.youtube.com/@LevitateHyperloop" target="_blank" aria-label="YouTube">
+      <img src="assets/yt.png" alt="YouTube" class="icon-youtube">
+    </a>
+  </div>
+  <hr>
+  
+</footer>
+<script src="pod2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+      AOS.init(); // Initialize AOS
+      function toggleMenu() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('active');  // Toggles the 'active' class to show/hide the menu
+}
+  </script>
+</body>
+
+ 
+
+</html>
