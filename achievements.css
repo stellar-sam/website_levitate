@@ -268,3 +268,20 @@ section{
     margin: 3vw; /* Reduce spacing between icons */
   }
 }
+
+
+.content .image {
+  position: relative;
+  width: 800px;
+  height: auto; /* Change from 400px to auto */
+  overflow: visible; /* Optional: allows shadows or glow to show */
+}
+
+.content .image img {
+  z-index: 111;
+  position: relative; /* Change from absolute if you want the container to grow with it */
+  width: 100%;
+  height: auto; /* Vital for maintaining aspect ratio */
+  object-fit: contain; /* Ensures the full image fits without cropping */
+  border-radius: 10px;
+}
