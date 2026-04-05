@@ -175,7 +175,13 @@
                 </a>
             </div>
             <div class="card" data-aos="fade-right">
-                <img src="assets/sam.jpg" alt="Member 3" class="profile-pic">
+                <img src="assets/sam.jpg" 
+                alt="Sambhav Jain" 
+                class="profile-pic" 
+                id="secret-sam" 
+                onclick="unlockSamEgg()"
+                draggable="false"
+                style="cursor: pointer;">
                 <h3>Sam :D</h3>
                 <p>Embedded Systems</p>
                 <a href="https://www.linkedin.com/in/sambhav-jain-cos/" target="_blank"class="linkedin-btn">
@@ -604,6 +610,7 @@
     // 1. INITIALIZE GLOBAL VARIABLES
     let clickCount = 0;
     let adarshClickCount = 0; // New counter for Adarsh
+    let samClickCount = 0; // New counter for Sam
 
     // 2. NAIJU EASTER EGG
     function unlockEasterEgg() {
@@ -635,6 +642,23 @@
             console.log("Captain Mode Activated.");
         }
     }
+
+    // 4. SAM EASTER EGG
+    function unlockSamEgg() {
+        samClickCount++;
+        const img = document.getElementById('secret-sam');
+        if (!img) return;
+        // Visual feedback on each click (optional but fun)
+        img.style.transform = 'scale(1.05)';
+        setTimeout(() => img.style.transform = 'scale(1)', 100);
+        if (samClickCount === 18) {
+            // Replace 'assets/newsam.jpg' with your actual filename
+            img.src = 'assets/samd.png'; 
+            img.style.filter = 'drop-shadow(0 0 15px #000) brightness(1.2)'; // Black glow for Sam
+            console.log("Pirate Mode Activated.");
+        }
+    }
+
 
     // 3. THE YEAR FILTER FUNCTION
     function filterTeam() {
